@@ -166,16 +166,16 @@ main {
 }
 
 .test {
-    width: 35%;
-    height: 85%;
+    width: 30%;
+    height: 80%;
     overflow: hidden;
-    /* border: 1px solid black; */
+    /* border: 3px solid rgb(0, 0, 0); */
     border-radius: 70px;
     /* padding: 1.75vw; */
     display: flex;
     flex-direction: row;
 
-    box-shadow: 0 0 25px 12px rgb(170, 170, 170);
+    box-shadow: 0 0 25px 12px rgb(140, 140, 140);
     background: rgba(255, 255, 255, 0.45);
 
     transform: perspective(800px) rotatey(0deg);
@@ -196,7 +196,7 @@ main {
         justify-content: center;
     }
         .test .img_wrapper img {
-            height: 55vh;
+            width: 45vw;
         }
 
     .test .text_wrapper {
@@ -204,11 +204,12 @@ main {
         height: 100%;
         overflow: hidden;
         /* border: 1px solid black; */
-        backdrop-filter: blur(40px);
-        padding: 25px;
+        /* backdrop-filter: blur(40px); */
+        padding: 15px;
+        color: rgba(255,255,255,0.65);
 
-        font-weight: 500;
-        font-size: 0.85vw;
+        font-weight: 350;
+        font-size: 0.77vw;
         display: flex;
         align-items: center;
         flex-direction: column;
