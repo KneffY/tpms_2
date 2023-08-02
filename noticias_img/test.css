@@ -1,0 +1,19 @@
+.container {
+    width: 600px;
+    height: 400px;
+    background: black;
+    white-space: nowrap;
+  text-align: center; /* Centramos horizontalmente */
+  font-size: 0; /* Eliminamos el espacio en blanco entre los elementos */
+}
+
+.box {
+  display: inline-block;
+  vertical-align: middle; /* Centramos verticalmente */
+  /* Estilos adicionales para los divs B, como tamaño, color, etc. */
+  width: 65%; /* Porcentaje relativo al contenedor A */
+  height: 50px; /* Altura fija o porcentaje relativo */
+  background-color: lightblue;
+  margin: 5px; /* Margen entre los divs B */
+  font-size: 16px; /* Restauramos el tamaño de fuente */
+}

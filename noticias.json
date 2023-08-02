@@ -1,0 +1,38 @@
+{
+    "noticias": [
+
+      {
+        "texto": "La maquina hotpress es vista en operaciones... por ultima vez. Nada hacia presagiar que aquella noche de septiembre seria la ultima en que el regulador de fuerza seria confiable para experimentacion de presicion. Un alumno de pregrado tuvo que migrar a la Universidad del BioBio y luego Valparaiso para no pagar un semestre extra...",
+        "fecha": "Algun dia del 2023",
+        "imagen": "./noticias_img/hotpress_2.jpg",
+        "selector": "n"
+      },
+      {
+        "texto": "La maquina hotpress es vista en operaciones... por ultima vez. Nada hacia presagiar que aquella noche de septiembre seria la ultima en que el regulador de fuerza seria confiable para experimentacion de presicion. Un alumno de pregrado tuvo que migrar a la Universidad del BioBio y luego Valparaiso para no pagar un semestre extra...",
+        "fecha": "Algun dia del 2023",
+        "imagen": "./noticias_img/hotpress_2.jpg",
+        "selector": "n2"
+      },
+      {
+        "texto": "La maquina hotpress es vista en operaciones... por ultima vez. Nada hacia presagiar que aquella noche de septiembre seria la ultima en que el regulador de fuerza seria confiable para experimentacion de presicion. Un alumno de pregrado tuvo que migrar a la Universidad del BioBio y luego Valparaiso para no pagar un semestre extra...",
+        "fecha": "Algun dia del 2023",
+        "imagen": "./noticias_img/hotpress_2.jpg",
+        "selector": "n3"
+      },
+      {
+        "texto": "La maquina hotpress es vista en operaciones... por ultima vez. Nada hacia presagiar que aquella noche de septiembre seria la ultima en que el regulador de fuerza seria confiable para experimentacion de presicion. Un alumno de pregrado tuvo que migrar a la Universidad del BioBio y luego Valparaiso para no pagar un semestre extra...",
+        "fecha": "Algun dia del 2023",
+        "imagen": "./noticias_img/hotpress_2.jpg",
+        "selector": "n4"
+      },
+      {
+        "texto": "La maquina hotpress es vista en operaciones... por ultima vez. Nada hacia presagiar que aquella noche de septiembre seria la ultima en que el regulador de fuerza seria confiable para experimentacion de presicion. Un alumno de pregrado tuvo que migrar a la Universidad del BioBio y luego Valparaiso para no pagar un semestre extra...",
+        "fecha": "Algun dia del 2023",
+        "imagen": "./noticias_img/hotpress_2.jpg",
+        "selector": "n5"
+      }
+      
+
+    ]
+  }
+  
