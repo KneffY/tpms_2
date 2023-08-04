@@ -1,6 +1,14 @@
 // VARS ############################################################
 
-let stage = document.querySelector(".news_wrapper")
+let stage = document.querySelector(".news_wrapper");
+let main_div = document.getElementById("main");
+
+let distanceToCenter = 0;
+let static_w = main_div.offsetWidth; // Ancho estatico
+let dinamic_w = stage.offsetWidth; // Ancho dinamico
+
+let windowWidth = window.innerWidth; // Ancho de la ventana del navegador
+let centerX = windowWidth / 2; // Posición horizontal del centro de la pantalla
 
 class news_tag {
     constructor (img, text, date, sel) {
@@ -145,18 +153,44 @@ news_list.forEach (d => {
 })
 
 
-// for (let i = 0; i<news_list.length; i++) {
+// acceder a la distancia relativa del mouse al centro del stage
 
-//     if (i < hover_index - 1 && hover_index - 2 >= 0) { // muy izquierda
-        
-//     } else if (i < hover_index && hover_index - 1 >= 0) { // izquierda
-        
-//     } else if (i == hover_index) { // hover
-        
-//     } else if (i > hover_index && hover_index <= news_list.length) { // derecha
-        
-//     } else if (i > hover_index + 1 && hover_index + 1 <= news_list.length) { // muy derecha
-        
-//     }
-// }
+stage.addEventListener ('mouseover', (e) => {
+    // let divX = stage.offsetLeft; // Posición horizontal del borde izquierdo del div
 
+    
+    let mouseX = e.clientX; // Posición horizontal del mouse en el viewport
+    
+
+    // Calculamos la distancia relativa en x del mouse al centro de la pantalla
+    distanceToCenter = mouseX - centerX;
+
+    console.log('Distancia en x al centro del div:', distanceToCenter);
+    console.log('Ancho estatico:', static_w);
+    console.log('Ancho dinamico:', dinamic_w);
+})
+
+
+
+// ################## DEBUG ##################
+setInterval(() => {
+    static_w = main_div.offsetWidth; // Ancho estatico
+    dinamic_w = stage.offsetWidth; // Ancho dinamico
+
+    centerX = windowWidth / 2; // Posición horizontal del centro de la pantalla
+    windowWidth = window.innerWidth; // Ancho de la ventana del navegador
+
+
+    // ajuste div dinamico
+    dx = distanceToCenter; // mouse a centro d + i -
+    a_ = static_w/2;
+    b_ = (dinamic_w - static_w)/2; // stage vs main
+    dx2 = (b_ * dx) / a_; 
+
+    stage.setAttribute('style', `margin-left: ${-dx2 * 1.5}px;`);
+
+    
+    
+
+
+})

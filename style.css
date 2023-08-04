@@ -159,9 +159,12 @@ main {
 
     box-shadow: 0 0 30px 12px rgb(170, 170, 170);
 
-    display: flex;
+    /* display: flex;
     align-items: center; 
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
+    
+
+
 
     /* white-space: nowrap; */
 
@@ -175,12 +178,24 @@ main {
     .news_wrapper {
         height: 80%;
         /* width:70vw; */
-        width: 1000vw;
+        /* width: 100vw; */
+        padding-left: 1vw;
+        padding-right: 1vw;
         /* border: 1px solid black; */
+
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         /* justify-content: space-evenly; */
+
+        position: absolute;
+        top: 50%; /* Colocamos el div a la mitad de la altura del contenedor */
+        left: 50%; /* Colocamos el div a la mitad del ancho del contenedor */
+        transform: translate(-50%, -50%);
+
+        /* margin-left: -100px; */
+        transition: margin-left 0.5s ease;
     }
 
 .test {
@@ -222,7 +237,9 @@ main {
     display: flex;
     flex-direction: row;
 
-    box-shadow: 0 0 25px 12px rgb(110, 110, 110);
+    /* box-shadow: 0 0 25px 12px rgb(110, 110, 110); */
+    box-shadow: 0 0 15px 7px rgb(70, 70, 70);
+
     background: rgba(255, 255, 255, 0.45);
 
     transform: perspective(800px) rotatey(55deg);
